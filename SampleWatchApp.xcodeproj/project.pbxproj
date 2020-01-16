@@ -13,7 +13,61 @@
 		789939A823CFA1A7005A68AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789939A623CFA1A6005A68AB /* Main.storyboard */; };
 		789939AA23CFA1A8005A68AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789939A923CFA1A8005A68AB /* Assets.xcassets */; };
 		789939AD23CFA1A8005A68AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789939AB23CFA1A8005A68AB /* LaunchScreen.storyboard */; };
+		789939B523CFA1D1005A68AB /* WKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789939B423CFA1D1005A68AB /* WKManager.swift */; };
+		789939BC23CFA395005A68AB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789939BA23CFA395005A68AB /* Interface.storyboard */; };
+		789939BE23CFA396005A68AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789939BD23CFA396005A68AB /* Assets.xcassets */; };
+		789939C523CFA396005A68AB /* SampleWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 789939C423CFA396005A68AB /* SampleWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		789939CA23CFA396005A68AB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789939C923CFA396005A68AB /* InterfaceController.swift */; };
+		789939CC23CFA396005A68AB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789939CB23CFA396005A68AB /* ExtensionDelegate.swift */; };
+		789939CE23CFA396005A68AB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789939CD23CFA396005A68AB /* NotificationController.swift */; };
+		789939D023CFA396005A68AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789939CF23CFA396005A68AB /* Assets.xcassets */; };
+		789939D523CFA397005A68AB /* SampleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 789939B823CFA395005A68AB /* SampleWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		78E70A9A23D0FC230029794B /* AllDetailsScreenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E70A9923D0FC230029794B /* AllDetailsScreenRow.swift */; };
+		78E70A9F23D10FF00029794B /* Screen1InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E70A9B23D10FB50029794B /* Screen1InterfaceController.swift */; };
+		78E70AA023D10FF00029794B /* Screen2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E70A9D23D10FD30029794B /* Screen2InterfaceController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		789939C623CFA396005A68AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7899399523CFA1A6005A68AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 789939C323CFA396005A68AB;
+			remoteInfo = "SampleWatch Extension";
+		};
+		789939D323CFA397005A68AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7899399523CFA1A6005A68AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 789939B723CFA395005A68AB;
+			remoteInfo = SampleWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		789939D923CFA397005A68AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				789939C523CFA396005A68AB /* SampleWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789939DD23CFA397005A68AB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				789939D523CFA397005A68AB /* SampleWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7899399D23CFA1A6005A68AB /* SampleWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +78,32 @@
 		789939A923CFA1A8005A68AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789939AC23CFA1A8005A68AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		789939AE23CFA1A8005A68AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		789939B423CFA1D1005A68AB /* WKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKManager.swift; sourceTree = "<group>"; };
+		789939B823CFA395005A68AB /* SampleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		789939BB23CFA395005A68AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		789939BD23CFA396005A68AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		789939BF23CFA396005A68AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		789939C423CFA396005A68AB /* SampleWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SampleWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		789939C923CFA396005A68AB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		789939CB23CFA396005A68AB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		789939CD23CFA396005A68AB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		789939CF23CFA396005A68AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		789939D123CFA396005A68AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		789939D223CFA396005A68AB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		78E70A9923D0FC230029794B /* AllDetailsScreenRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDetailsScreenRow.swift; sourceTree = "<group>"; };
+		78E70A9B23D10FB50029794B /* Screen1InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1InterfaceController.swift; sourceTree = "<group>"; };
+		78E70A9D23D10FD30029794B /* Screen2InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2InterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7899399A23CFA1A6005A68AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789939C123CFA396005A68AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				7899399F23CFA1A6005A68AB /* SampleWatchApp */,
+				789939B923CFA395005A68AB /* SampleWatch */,
+				789939C823CFA396005A68AB /* SampleWatch Extension */,
 				7899399E23CFA1A6005A68AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				7899399D23CFA1A6005A68AB /* SampleWatchApp.app */,
+				789939B823CFA395005A68AB /* SampleWatch.app */,
+				789939C423CFA396005A68AB /* SampleWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +143,35 @@
 				789939A923CFA1A8005A68AB /* Assets.xcassets */,
 				789939AB23CFA1A8005A68AB /* LaunchScreen.storyboard */,
 				789939AE23CFA1A8005A68AB /* Info.plist */,
+				789939B423CFA1D1005A68AB /* WKManager.swift */,
 			);
 			path = SampleWatchApp;
+			sourceTree = "<group>";
+		};
+		789939B923CFA395005A68AB /* SampleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				789939BA23CFA395005A68AB /* Interface.storyboard */,
+				789939BD23CFA396005A68AB /* Assets.xcassets */,
+				789939BF23CFA396005A68AB /* Info.plist */,
+			);
+			path = SampleWatch;
+			sourceTree = "<group>";
+		};
+		789939C823CFA396005A68AB /* SampleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				789939C923CFA396005A68AB /* InterfaceController.swift */,
+				78E70A9B23D10FB50029794B /* Screen1InterfaceController.swift */,
+				78E70A9D23D10FD30029794B /* Screen2InterfaceController.swift */,
+				789939CB23CFA396005A68AB /* ExtensionDelegate.swift */,
+				789939CD23CFA396005A68AB /* NotificationController.swift */,
+				789939CF23CFA396005A68AB /* Assets.xcassets */,
+				789939D123CFA396005A68AB /* Info.plist */,
+				789939D223CFA396005A68AB /* PushNotificationPayload.apns */,
+				78E70A9923D0FC230029794B /* AllDetailsScreenRow.swift */,
+			);
+			path = "SampleWatch Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +184,51 @@
 				7899399923CFA1A6005A68AB /* Sources */,
 				7899399A23CFA1A6005A68AB /* Frameworks */,
 				7899399B23CFA1A6005A68AB /* Resources */,
+				789939DD23CFA397005A68AB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				789939D423CFA397005A68AB /* PBXTargetDependency */,
 			);
 			name = SampleWatchApp;
 			productName = SampleWatchApp;
 			productReference = 7899399D23CFA1A6005A68AB /* SampleWatchApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		789939B723CFA395005A68AB /* SampleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789939DA23CFA397005A68AB /* Build configuration list for PBXNativeTarget "SampleWatch" */;
+			buildPhases = (
+				789939B623CFA395005A68AB /* Resources */,
+				789939D923CFA397005A68AB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				789939C723CFA396005A68AB /* PBXTargetDependency */,
+			);
+			name = SampleWatch;
+			productName = SampleWatch;
+			productReference = 789939B823CFA395005A68AB /* SampleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		789939C323CFA396005A68AB /* SampleWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789939D623CFA397005A68AB /* Build configuration list for PBXNativeTarget "SampleWatch Extension" */;
+			buildPhases = (
+				789939C023CFA396005A68AB /* Sources */,
+				789939C123CFA396005A68AB /* Frameworks */,
+				789939C223CFA396005A68AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SampleWatch Extension";
+			productName = "SampleWatch Extension";
+			productReference = 789939C423CFA396005A68AB /* SampleWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +241,12 @@
 				ORGANIZATIONNAME = SampleWatch;
 				TargetAttributes = {
 					7899399C23CFA1A6005A68AB = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					789939B723CFA395005A68AB = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					789939C323CFA396005A68AB = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -116,6 +265,8 @@
 			projectRoot = "";
 			targets = (
 				7899399C23CFA1A6005A68AB /* SampleWatchApp */,
+				789939B723CFA395005A68AB /* SampleWatch */,
+				789939C323CFA396005A68AB /* SampleWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +282,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		789939B623CFA395005A68AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789939BE23CFA396005A68AB /* Assets.xcassets in Resources */,
+				789939BC23CFA395005A68AB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789939C223CFA396005A68AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789939D023CFA396005A68AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,10 +309,37 @@
 				789939A523CFA1A6005A68AB /* ViewController.swift in Sources */,
 				789939A123CFA1A6005A68AB /* AppDelegate.swift in Sources */,
 				789939A323CFA1A6005A68AB /* SceneDelegate.swift in Sources */,
+				789939B523CFA1D1005A68AB /* WKManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789939C023CFA396005A68AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789939CE23CFA396005A68AB /* NotificationController.swift in Sources */,
+				789939CC23CFA396005A68AB /* ExtensionDelegate.swift in Sources */,
+				78E70AA023D10FF00029794B /* Screen2InterfaceController.swift in Sources */,
+				78E70A9F23D10FF00029794B /* Screen1InterfaceController.swift in Sources */,
+				789939CA23CFA396005A68AB /* InterfaceController.swift in Sources */,
+				78E70A9A23D0FC230029794B /* AllDetailsScreenRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		789939C723CFA396005A68AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 789939C323CFA396005A68AB /* SampleWatch Extension */;
+			targetProxy = 789939C623CFA396005A68AB /* PBXContainerItemProxy */;
+		};
+		789939D423CFA397005A68AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 789939B723CFA395005A68AB /* SampleWatch */;
+			targetProxy = 789939D323CFA397005A68AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		789939A623CFA1A6005A68AB /* Main.storyboard */ = {
@@ -161,6 +356,14 @@
 				789939AC23CFA1A8005A68AB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		789939BA23CFA395005A68AB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				789939BB23CFA395005A68AB /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -316,6 +519,88 @@
 			};
 			name = Release;
 		};
+		789939D723CFA397005A68AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYAD629S9N;
+				INFOPLIST_FILE = "SampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapplication.watchapp.SampleWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		789939D823CFA397005A68AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYAD629S9N;
+				INFOPLIST_FILE = "SampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapplication.watchapp.SampleWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		789939DB23CFA397005A68AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYAD629S9N;
+				IBSC_MODULE = SampleWatch_Extension;
+				INFOPLIST_FILE = SampleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapplication.watchapp.SampleWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		789939DC23CFA397005A68AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TYAD629S9N;
+				IBSC_MODULE = SampleWatch_Extension;
+				INFOPLIST_FILE = SampleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testapplication.watchapp.SampleWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +618,24 @@
 			buildConfigurations = (
 				789939B223CFA1A8005A68AB /* Debug */,
 				789939B323CFA1A8005A68AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789939D623CFA397005A68AB /* Build configuration list for PBXNativeTarget "SampleWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789939D723CFA397005A68AB /* Debug */,
+				789939D823CFA397005A68AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789939DA23CFA397005A68AB /* Build configuration list for PBXNativeTarget "SampleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				789939DB23CFA397005A68AB /* Debug */,
+				789939DC23CFA397005A68AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
